@@ -1,0 +1,126 @@
+## ─── Visual Studio ───────────────────────────────────────────────────────────
+ 
+# File utente e impostazioni locali VS
+.vs/
+*.user
+*.suo
+*.userosscache
+*.sln.docstates
+ 
+# File di aggiornamento Visual Studio
+*.vspscc
+*.vssscc
+ 
+## ─── Build e output ─────────────────────────────────────────────────────────
+ 
+[Bb]in/
+[Oo]bj/
+[Ll]og/
+[Ll]ogs/
+ 
+# Output di pubblicazione
+[Pp]ublish/
+PublishProfiles/
+project.lock.json
+project.fragment.lock.json
+artifacts/
+ 
+# Cartelle di output MSBuild
+[Dd]ebug/
+[Rr]elease/
+x64/
+x86/
+[Ww][Ii][Nn]32/
+[Aa][Rr][Mm]/
+[Aa][Rr][Mm]64/
+ 
+## ─── NuGet ───────────────────────────────────────────────────────────────────
+ 
+*.nupkg
+*.snupkg
+# Cartella packages di NuGet (quando non si usa PackageReference)
+packages/
+# Esclude i file di specifica NuGet che devono stare nel repo
+!**/packages/build/
+# File di lock NuGet generati automaticamente
+# (tienili se vuoi build deterministici)
+# packages.lock.json
+ 
+## ─── .NET ────────────────────────────────────────────────────────────────────
+ 
+project.nuget.cache
+*.nuget.props
+*.nuget.targets
+ 
+# File coverage test
+*.coverage
+*.coveragexml
+TestResults/
+coverage-reports/
+ 
+# Cartella publish dotnet
+publish/
+ 
+## ─── Roslyn / Analizzatori ───────────────────────────────────────────────────
+ 
+Generated\ Files/
+ 
+## ─── ReSharper ───────────────────────────────────────────────────────────────
+ 
+_ReSharper*/
+*.[Rr]e[Ss]harper
+*.DotSettings.user
+ 
+## ─── Rider ───────────────────────────────────────────────────────────────────
+ 
+.idea/
+*.sln.iml
+ 
+## ─── File temporanei e sistema ───────────────────────────────────────────────
+ 
+# Windows
+Thumbs.db
+Thumbs.db:encryptable
+ehthumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+*.lnk
+ 
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+._*
+ 
+# Linux
+*~
+ 
+## ─── Secrets e configurazione locale ────────────────────────────────────────
+ 
+# NON committare mai questi file
+*.pfx
+*.p12
+*.key
+appsettings.Development.json
+appsettings.Local.json
+secrets.json
+.env
+.env.local
+.env.*.local
+ 
+## ─── Azure / deployment ─────────────────────────────────────────────────────
+ 
+*.pubxml
+*.pubxml.user
+*.azurePubxml
+serviceConfiguration.*.cscfg
+ 
+## ─── Database ────────────────────────────────────────────────────────────────
+ 
+*.mdf
+*.ldf
+*.ndf
+ 
+## ─── Benchmark ───────────────────────────────────────────────────────────────
+ 
+BenchmarkDotNet.Artifacts/
